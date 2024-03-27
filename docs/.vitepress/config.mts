@@ -58,5 +58,4 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/wisenchen' }
     ]
   },
-  base: '/repo/'
 })
