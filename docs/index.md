@@ -4,15 +4,15 @@ layout: home
 
 hero:
   name: "Wisen blog"
-  text: "个人博客，记录学习过程"
-  tagline: My great project tagline
+  text: "个人博客，知识库"
+  tagline: 不忘初心，方得始终
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 知识库
+      link: /knowledge/
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 文章
+      link: /article/
 
 features:
   - title: Feature A
