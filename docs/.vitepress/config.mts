@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Wisen blog",
+  title: "玉沐丶",
   description: "记录学习过程",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -19,8 +19,9 @@ export default defineConfig({
           text: 'JavaScript',
           collapsed: false,
           items: [
-            { text: 'Markdown Examples', link: '/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/api-examples' }
+            { text: '一些新知识', link: '/knowledge/newKnowledge' },
+            { text: '探讨性问题', link: '/knowledge/discussion' },
+            { text: '如何实现一个CLI 工具', link: '/knowledge/cli' },
           ]
         },
         {
