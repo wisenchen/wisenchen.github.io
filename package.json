@@ -10,6 +10,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
+    "element-plus": "^2.7.0",
     "pdfjs-dist": "^4.0.379"
   }
 }

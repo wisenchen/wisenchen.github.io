@@ -23,4 +23,3 @@ export const bookSideBarConfig = bookFiles.map((name) => ({
   text: name,
   link: `/knowledge/book/${name}`,
 }));
-console.log(globalThis.pdfjsLib.GlobalWorkerOptions);
