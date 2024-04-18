@@ -35,7 +35,10 @@ export default defineConfig({
             { text: "观察者模式", link: "/knowledge/design-patterns/observer" },
             { text: "工厂模式", link: "/knowledge/design-patterns/factory" },
             { text: "适配器模式", link: "/knowledge/design-patterns/adapter" },
-            { text: "装饰器模式", link: "/knowledge/design-patterns/decorator" },
+            {
+              text: "装饰器模式",
+              link: "/knowledge/design-patterns/decorator",
+            },
             { text: "迭代器模式", link: "/knowledge/design-patterns/iterator" },
             { text: "原型模式", link: "/knowledge/design-patterns/prototype" },
             { text: "代理模式", link: "/knowledge/design-patterns/proxy" },
@@ -45,6 +48,39 @@ export default defineConfig({
           text: "Book",
           collapsed: false,
           items: bookSideBarConfig,
+        },
+        {
+          text: "工作流",
+          collapsed: false,
+          items: [
+            { text: "git", link: "/knowledge/workflow/git" },
+            { text: "submodule", link: "/knowledge/workflow/submodule" },
+            { text: "monorepo", link: "/knowledge/javascript/discussion" },
+            { text: "微前端", link: "/knowledge/javascript/cli" },
+            { text: "vite", link: "/knowledge/javascript/cli" },
+            { text: "webpack", link: "/knowledge/javascript/cli" },
+          ],
+        },
+        {
+          text: "杂记",
+          collapsed: false,
+          items: [
+            {
+              text: "css",
+              collapsed: false,
+              items: [
+                {
+                  text: "css 企鹅",
+                  link: "/knowledge/other/css/penguin.html",
+                },
+              ],
+            },
+            { text: "submodule", link: "/knowledge/workflow/submodule" },
+            { text: "monorepo", link: "/knowledge/javascript/discussion" },
+            { text: "微前端", link: "/knowledge/javascript/cli" },
+            { text: "vite", link: "/knowledge/javascript/cli" },
+            { text: "webpack", link: "/knowledge/javascript/cli" },
+          ],
         },
       ],
       "/article/": [
