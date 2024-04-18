@@ -8,8 +8,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "知识库", link: "/knowledge/" },
-      { text: "文章", link: "/article/" },
+      { text: "知识库", link: "/knowledge/javascript/newKnowledge" },
+      { text: "文集", link: "/article/" },
       { text: "小游戏", link: "/games/" },
       { text: "工具集", link: "/tools/" },
     ],
@@ -35,10 +35,7 @@ export default defineConfig({
             { text: "发布订阅模式", link: "/knowledge/design-patterns/pubsub" },
             { text: "策略模式", link: "/knowledge/design-patterns/strategy" },
             { text: "适配器模式", link: "/knowledge/design-patterns/adapter" },
-            {
-              text: "装饰器模式",
-              link: "/knowledge/design-patterns/decorator",
-            },
+            { text: "装饰器模式", link: "/knowledge/design-patterns/decorator" },
             { text: "迭代器模式", link: "/knowledge/design-patterns/iterator" },
             { text: "原型模式", link: "/knowledge/design-patterns/prototype" },
             { text: "代理模式", link: "/knowledge/design-patterns/proxy" },
