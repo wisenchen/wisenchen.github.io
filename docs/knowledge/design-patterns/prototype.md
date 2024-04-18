@@ -1,36 +1,38 @@
-# 单例模式
+# 原型模式
 
-## 什么是单例模式，实际应用场景？
+## 什么是原型模式，实际应用场景？
 
-单例模式（Singleton Pattern）是一种常用的软件设计模式，该模式的主要目标是确保一个类只有一个实例，并提供一个全局访问点来获取这个唯一的实例。
+原型模式（Prototype Pattern）是一种创建型设计模式，它使用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。原型模式是一种比较简单的模式，特别适合需要大量相同或相似对象的场景。
 
-简单理解就是，全局的某个服务，整个项目中共用的，像 Vue Router、Vuex 等 都是典型的单例模式。
+实际应用场景有：
 
-## JavaScript 中的单例模式实现
+- 大量相同或相似对象的创建：例如，你需要创建一个大量的相同的对象，这些对象的创建成本较高。你可以使用原型模式来提高性能。
+- 需要复制或克隆对象：例如，你需要复制或克隆一个对象，而这个对象的内部状态复杂或难以追踪。你可以使用原型模式来简化这个过程
+
+## JavaScript 中的原型模式实现
 
 ```js
-class Singleton {
-  constructor() {
-    // 判断是否已经存在实例，如果存在则返回已存在的实例
-    if (!Singleton.instance) {
-      Singleton.instance = this;
-    }
-    return Singleton.instance;
+// 原型对象
+const carPrototype = {
+  drive() {
+    return 'Driving...';
+  },
+
+  brake() {
+    return 'Braking...';
+  },
+
+  // 克隆方法
+  clone() {
+    // 使用 Object.create 方法创建一个新的对象，并将当前对象作为新对象的原型
+    return Object.create(this);
   }
-}
-// 这里不管实例化多少次，都是返回同一个实例
-const instanceA = new Singleton();
-const instanceB = new Singleton();
+};
 
-console.log(instanceA === instanceB); // 输出: true
-```
+// 使用示例
+const car1 = carPrototype.clone();
+console.log(car1.drive()); // 输出：Driving...
 
-参考 Vue Router 的部分源码也是类似的实现：
-
-```js
-export function install (Vue) {
-  if (install.installed && _Vue === Vue) return
-  install.installed = true
-
-}
+const car2 = carPrototype.clone();
+console.log(car2.brake()); // 输出：Braking...
 ```
