@@ -20,9 +20,25 @@ export default defineConfig({
           text: "JavaScript",
           collapsed: false,
           items: [
-            { text: "一些新知识", link: "/knowledge/newKnowledge" },
-            { text: "探讨性问题", link: "/knowledge/discussion" },
-            { text: "如何实现一个CLI 工具", link: "/knowledge/cli" },
+            { text: "一些新知识", link: "/knowledge/javascript/newKnowledge" },
+            { text: "探讨性问题", link: "/knowledge/javascript/discussion" },
+            { text: "如何实现一个CLI 工具", link: "/javascript/knowledge/cli" },
+          ],
+        },
+        {
+          text: "设计模式",
+          collapsed: false,
+          items: [
+            { text: "单例模式", link: "/knowledge/design-patterns/singleton" },
+            { text: "工厂模式", link: "/knowledge/design-patterns/factory" },
+            { text: "观察者模式", link: "/knowledge/design-patterns/observer" },
+            { text: "发布订阅模式", link: "/knowledge/design-patterns/pubsub" },
+            { text: "策略模式", link: "/knowledge/design-patterns/strategy" },
+            { text: "适配器模式", link: "/knowledge/design-patterns/adapter" },
+            { text: "装饰器模式", link: "/knowledge/design-patterns/decorator" },
+            { text: "迭代器模式", link: "/knowledge/design-patterns/iterator" },
+            { text: "原型模式", link: "/knowledge/design-patterns/prototype" },
+            { text: "代理模式", link: "/knowledge/design-patterns/proxy" },
           ],
         },
         {

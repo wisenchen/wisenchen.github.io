@@ -58,10 +58,10 @@ const handlePageChange = (newPageNumber) => {
 
 onMounted(() => {
   setTimeout(() => {
-    canvas = document.querySelector('.pdf-canvas') as HTMLCanvasElement;
+    canvas = document.querySelector(".pdf-canvas") as HTMLCanvasElement;
     context = canvas.getContext("2d");
     initPdf(props.url);
-  }, 100);
+  }, 1000);
 });
 
 watchEffect(() => {
@@ -72,7 +72,11 @@ watchEffect(() => {
 </script>
 
 <style>
-.el-pager li.number {
+.el-pager li.number,
+.el-pager li.more {
   margin-top: 0px;
+}
+.vp-doc ul, .vp-doc ol{
+  padding-left:0
 }
 </style>
