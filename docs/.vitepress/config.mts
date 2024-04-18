@@ -35,7 +35,10 @@ export default defineConfig({
             { text: "发布订阅模式", link: "/knowledge/design-patterns/pubsub" },
             { text: "策略模式", link: "/knowledge/design-patterns/strategy" },
             { text: "适配器模式", link: "/knowledge/design-patterns/adapter" },
-            { text: "装饰器模式", link: "/knowledge/design-patterns/decorator" },
+            {
+              text: "装饰器模式",
+              link: "/knowledge/design-patterns/decorator",
+            },
             { text: "迭代器模式", link: "/knowledge/design-patterns/iterator" },
             { text: "原型模式", link: "/knowledge/design-patterns/prototype" },
             { text: "代理模式", link: "/knowledge/design-patterns/proxy" },
@@ -72,7 +75,12 @@ export default defineConfig({
   head: [
     [
       "script",
-      { async: "", type: "module", src: "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.mjs" },
-    ]
+      {
+        async: "",
+        type: "module",
+        src: "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.mjs",
+      },
+    ],
   ],
+  base: "blog",
 });
