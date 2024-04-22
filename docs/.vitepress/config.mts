@@ -26,6 +26,15 @@ export default defineConfig({
           ],
         },
         {
+          text: "CSS",
+          collapsed: false,
+          items: [
+            { text: "一些新知识", link: "/knowledge/css/newKnowledge" },
+            { text: "粘性定位", link: "/knowledge/css/sticky" },
+            { text: "Grid 布局", link: "/knowledge/css/grid" },
+          ],
+        },
+        {
           text: "设计模式",
           collapsed: false,
           items: [
@@ -35,6 +44,78 @@ export default defineConfig({
             { text: "观察者模式", link: "/knowledge/design-patterns/observer" },
             { text: "工厂模式", link: "/knowledge/design-patterns/factory" },
             { text: "适配器模式", link: "/knowledge/design-patterns/adapter" },
+            {
+              text: "装饰器模式",
+              link: "/knowledge/design-patterns/decorator",
+            },
+            { text: "迭代器模式", link: "/knowledge/design-patterns/iterator" },
+            { text: "原型模式", link: "/knowledge/design-patterns/prototype" },
+            { text: "代理模式", link: "/knowledge/design-patterns/proxy" },
+          ],
+        },
+        {
+          text: "算法",
+          collapsed: false,
+          items: [
+            {
+              text: "排序类",
+              collapsed: false,
+              link: "/knowledge/algorithm/",
+              items: [
+                {
+                  text: "1.快速排序",
+                  link: "/knowledge/algorithm/quickSort",
+                },
+                {
+                  text: "2.插入排序",
+                  link: "/knowledge/algorithm/insertSort",
+                },
+                {
+                  text: "3.冒泡排序",
+                  link: "/knowledge/algorithm/bubbleSort",
+                },
+                {
+                  text: "4.选择排序",
+                  link: "/knowledge/algorithm/selectSort",
+                },
+                {
+                  text: "5.计数排序",
+                  link: "/knowledge/algorithm/countSort",
+                },
+                {
+                  text: "6.希尔排序",
+                  link: "/knowledge/algorithm/shellSort",
+                },
+                {
+                  text: "7.归并排序",
+                  link: "/knowledge/algorithm/mergeSort",
+                },
+                {
+                  text: "8.堆排序",
+                  link: "/knowledge/algorithm/maxHeapSort",
+                },
+                {
+                  text: "9.桶排序",
+                  link: "/knowledge/algorithm/bucketSort",
+                },
+                {
+                  text: "10.基数排序",
+                  link: "/knowledge/algorithm/radixSort",
+                },
+              ],
+            },
+            { text: "动态规划", link: "/knowledge/algorithm/singleton" },
+            { text: "数组", link: "/knowledge/algorithm/pubsub" },
+            { text: "字符串", link: "/knowledge/algorithm/observer" },
+            { text: "工厂模式", link: "/knowledge/algorithm/factory" },
+            { text: "双指针", link: "/knowledge/algorithm/adapter" },
+            { text: "二叉树", link: "/knowledge/algorithm/adapter" },
+            { text: "链表", link: "/knowledge/algorithm/adapter" },
+            { text: "设计", link: "/knowledge/algorithm/adapter" },
+            { text: "哈希", link: "/knowledge/algorithm/adapter" },
+            { text: "位运算", link: "/knowledge/algorithm/adapter" },
+            { text: "栈", link: "/knowledge/algorithm/adapter" },
+            { text: "递归", link: "/knowledge/algorithm/adapter" },
             {
               text: "装饰器模式",
               link: "/knowledge/design-patterns/decorator",
@@ -79,11 +160,6 @@ export default defineConfig({
                 },
               ],
             },
-            { text: "submodule", link: "/knowledge/workflow/submodule" },
-            { text: "monorepo", link: "/knowledge/javascript/discussion" },
-            { text: "微前端", link: "/knowledge/javascript/cli" },
-            { text: "vite", link: "/knowledge/javascript/cli" },
-            { text: "webpack", link: "/knowledge/javascript/cli" },
           ],
         },
       ],
