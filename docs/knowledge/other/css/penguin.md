@@ -188,36 +188,25 @@
             top: 10%;
         }
 </style>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <div class="penguin">
-        <div class="penguin-header">
-            <div class="left-cheek"></div>
-            <div class="right-cheek"></div>
-            <div class="left-eye"></div>
-            <div class="right-eye"></div>
-            <div class="top-lip"></div>
-            <div class="bottom-lip"></div>
-            <div class="left-blush"></div>
-            <div class="right-blush"></div>
-            <div class="belly"></div>
-        </div>
-        <div class="penguin-body">
-            <div class="left-hand"></div>
-            <div class="right-hand"></div>
-        </div>
-        <div class="penguin-footer">
-            <div class="left-feet"></div>
-            <div class="right-feet"></div>
-        </div>
-    </div>
-</body>
 
-</html>
+<div class="penguin">
+    <div class="penguin-header">
+        <div class="left-cheek"></div>
+        <div class="right-cheek"></div>
+        <div class="left-eye"></div>
+        <div class="right-eye"></div>
+        <div class="top-lip"></div>
+        <div class="bottom-lip"></div>
+        <div class="left-blush"></div>
+        <div class="right-blush"></div>
+        <div class="belly"></div>
+    </div>
+    <div class="penguin-body">
+        <div class="left-hand"></div>
+        <div class="right-hand"></div>
+    </div>
+    <div class="penguin-footer">
+        <div class="left-feet"></div>
+        <div class="right-feet"></div>
+    </div>
+</div>

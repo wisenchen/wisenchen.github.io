@@ -71,7 +71,11 @@ export default defineConfig({
               items: [
                 {
                   text: "css 企鹅",
-                  link: "/knowledge/other/css/penguin.html",
+                  link: "/knowledge/other/css/penguin",
+                },
+                {
+                  text: "css 水杯",
+                  link: "/knowledge/other/css/cup",
                 },
               ],
             },
