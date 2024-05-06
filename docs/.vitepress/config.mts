@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import { bookSideBarConfig } from "../knowledge/book/config";
-
+import { algorithmSidebarConfig } from "../knowledge/algorithm/index";
+console.log(algorithmSidebarConfig)
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "玉沐丶",
@@ -91,6 +92,7 @@ export default defineConfig({
             },
             {
               text: "数组",
+              collapsed: true,
               link: "/knowledge/algorithm/array/",
               items: [
                 { text: "48.旋转图像", link: "/knowledge/algorithm/array/48.旋转图像" },
@@ -113,6 +115,20 @@ export default defineConfig({
               link: "/knowledge/algorithm/two-pointers/",
               items: [
                 { text: "11.盛最多水的容器", link: "/knowledge/algorithm/two-pointers/11.盛最多水的容器" },
+                { text: "21.合并两个有序链表", link: "/knowledge/algorithm/two-pointers/21.合并两个有序链表" },
+                { text: "26.删除排序数组中的重复项", link: "/knowledge/algorithm/two-pointers/26.删除排序数组中的重复项" },
+                { text: "27.移除元素", link: "/knowledge/algorithm/two-pointers/27.移除元素" },
+                { text: "28.实现strStr()", link: "/knowledge/algorithm/two-pointers/28.实现strStr()" },
+                { text: "75.颜色分类", link: "/knowledge/algorithm/two-pointers/75.颜色分类" },
+                { text: "80.删除排序数组中的重复项-Ⅱ.md", link: "/knowledge/algorithm/two-pointers/80.删除排序数组中的重复项-Ⅱ.md" },
+                { text: "88.合并两个有序数组", link: "/knowledge/algorithm/two-pointers/88.合并两个有序数组" },
+                { text: "125.验证回文串", link: "/knowledge/algorithm/two-pointers/125.验证回文串" },
+                { text: "167.两数之和Ⅱ", link: "/knowledge/algorithm/two-pointers/167.两数之和Ⅱ" },
+                { text: "209.长度最小的子数组", link: "/knowledge/algorithm/two-pointers/209.长度最小的子数组" },
+                { text: "283.移动零", link: "/knowledge/algorithm/two-pointers/283.移动零" },
+                { text: "344.反转字符串", link: "/knowledge/algorithm/two-pointers/344.反转字符串" },
+                { text: "345.反转字符串中的元音字母", link: "/knowledge/algorithm/two-pointers/345.反转字符串中的元音字母" },
+                { text: "350.两个数组的交集Ⅱ", link: "/knowledge/algorithm/two-pointers/350.两个数组的交集Ⅱ" },
               ],
             },
             { text: "二叉树", link: "/knowledge/algorithm/adapter/" },
