@@ -1,7 +1,6 @@
 import { defineConfig } from "vitepress";
 import { bookSideBarConfig } from "../knowledge/book/config";
 import { algorithmSidebarConfig } from "../knowledge/algorithm/index";
-console.log(algorithmSidebarConfig)
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "玉沐丶",
@@ -57,97 +56,17 @@ export default defineConfig({
         },
         {
           text: "算法",
-          collapsed: false,
-          items: [
-            {
-              text: "排序类",
-              collapsed: true,
-
-              link: "/knowledge/algorithm/sorting/",
-              items: [
-                { text: "1.快速排序", link: "/knowledge/algorithm/sorting/quickSort" },
-                { text: "2.插入排序", link: "/knowledge/algorithm/sorting/insertSort" },
-                { text: "3.冒泡排序", link: "/knowledge/algorithm/sorting/bubbleSort" },
-                { text: "4.选择排序", link: "/knowledge/algorithm/sorting/selectSort" },
-                { text: "5.计数排序", link: "/knowledge/algorithm/sorting/countSort" },
-                { text: "6.希尔排序", link: "/knowledge/algorithm/sorting/shellSort" },
-                { text: "7.归并排序", link: "/knowledge/algorithm/sorting/mergeSort" },
-                { text: "8.堆排序", link: "/knowledge/algorithm/sorting/maxHeapSort" },
-                { text: "9.桶排序", link: "/knowledge/algorithm/sorting/bucketSort" },
-                { text: "10.基数排序", link: "/knowledge/algorithm/sorting/radixSort" },
-              ],
-            },
-            {
-              text: "动态规划",
-              collapsed: true,
-              link: "/knowledge/algorithm/dp/",
-              items: [
-                { text: "70.爬楼梯", link: "/knowledge/algorithm/dp/70.爬楼梯" },
-                { text: "53.最大子序列和", link: "/knowledge/algorithm/dp/53.最大子序列和" },
-                { text: "198.打家劫舍", link: "/knowledge/algorithm/dp/198.打家劫舍" },
-                { text: "121.买卖股票的最佳时机", link: "/knowledge/algorithm/dp/121.买卖股票的最佳时机" },
-                { text: "122.买卖股票的最佳时机II", link: "/knowledge/algorithm/dp/122.买卖股票的最佳时机II" },
-                { text: "118.杨辉三角", link: "/knowledge/algorithm/dp/118.杨辉三角" },
-              ],
-            },
-            {
-              text: "数组",
-              collapsed: true,
-              link: "/knowledge/algorithm/array/",
-              items: [
-                { text: "48.旋转图像", link: "/knowledge/algorithm/array/48.旋转图像" },
-                { text: "66.加一", link: "/knowledge/algorithm/array/66.加一" },
-                { text: "189.旋转数组", link: "/knowledge/algorithm/array/189.旋转数组" },
-              ],
-            },
-            {
-              text: "字符串",
-              link: "/knowledge/algorithm/string/",
-              items: [
-                { text: "8.字符串转整数-atoi", link: "/knowledge/algorithm/string/8.字符串转整数-atoi" },
-                { text: "13.罗马数字整数", link: "/knowledge/algorithm/string/13.罗马数字整数" },
-                { text: "14.最长公共前缀", link: "/knowledge/algorithm/string/14.最长公共前缀" },
-                { text: "412.Fizz Buzz", link: "/knowledge/algorithm/string/412.Fizz Buzz" },
-              ],
-            },
-            {
-              text: "双指针",
-              link: "/knowledge/algorithm/two-pointers/",
-              items: [
-                { text: "11.盛最多水的容器", link: "/knowledge/algorithm/two-pointers/11.盛最多水的容器" },
-                { text: "21.合并两个有序链表", link: "/knowledge/algorithm/two-pointers/21.合并两个有序链表" },
-                { text: "26.删除排序数组中的重复项", link: "/knowledge/algorithm/two-pointers/26.删除排序数组中的重复项" },
-                { text: "27.移除元素", link: "/knowledge/algorithm/two-pointers/27.移除元素" },
-                { text: "28.实现strStr()", link: "/knowledge/algorithm/two-pointers/28.实现strStr()" },
-                { text: "75.颜色分类", link: "/knowledge/algorithm/two-pointers/75.颜色分类" },
-                { text: "80.删除排序数组中的重复项-Ⅱ.md", link: "/knowledge/algorithm/two-pointers/80.删除排序数组中的重复项-Ⅱ.md" },
-                { text: "88.合并两个有序数组", link: "/knowledge/algorithm/two-pointers/88.合并两个有序数组" },
-                { text: "125.验证回文串", link: "/knowledge/algorithm/two-pointers/125.验证回文串" },
-                { text: "167.两数之和Ⅱ", link: "/knowledge/algorithm/two-pointers/167.两数之和Ⅱ" },
-                { text: "209.长度最小的子数组", link: "/knowledge/algorithm/two-pointers/209.长度最小的子数组" },
-                { text: "283.移动零", link: "/knowledge/algorithm/two-pointers/283.移动零" },
-                { text: "344.反转字符串", link: "/knowledge/algorithm/two-pointers/344.反转字符串" },
-                { text: "345.反转字符串中的元音字母", link: "/knowledge/algorithm/two-pointers/345.反转字符串中的元音字母" },
-                { text: "350.两个数组的交集Ⅱ", link: "/knowledge/algorithm/two-pointers/350.两个数组的交集Ⅱ" },
-              ],
-            },
-            { text: "二叉树", link: "/knowledge/algorithm/adapter/" },
-            { text: "链表", link: "/knowledge/algorithm/adapter/" },
-            { text: "设计", link: "/knowledge/algorithm/adapter/" },
-            { text: "哈希", link: "/knowledge/algorithm/adapter/" },
-            { text: "位运算", link: "/knowledge/algorithm/adapter/" },
-            { text: "栈", link: "/knowledge/algorithm/adapter/" },
-            { text: "递归", link: "/knowledge/algorithm/adapter/" },
-          ],
+          collapsed: true,
+          items: algorithmSidebarConfig,
         },
         {
           text: "Book",
-          collapsed: false,
+          collapsed: true,
           items: bookSideBarConfig,
         },
         {
           text: "工作流",
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: "git", link: "/knowledge/workflow/git" },
             { text: "submodule", link: "/knowledge/workflow/submodule" },

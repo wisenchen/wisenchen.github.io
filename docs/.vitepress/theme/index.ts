@@ -5,7 +5,7 @@ import DefaultTheme from "vitepress/theme";
 import "./style.css";
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
-
+import './custom.css';
 export default {
   extends: DefaultTheme,
   Layout: () => {
