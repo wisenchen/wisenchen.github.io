@@ -65,6 +65,66 @@ export default defineConfig({
           items: bookSideBarConfig,
         },
         {
+          text: "计算机网络",
+          collapsed: true,
+          link: "/knowledge/network/",
+          items: [
+            { text: "HTTP/HTTPS", link: "/knowledge/network/http" },
+            { text: "WebSocket", link: "/knowledge/network/websocket" },
+            { text: "TCP/UDP", link: "/knowledge/network/tcp" },
+            { text: "RPC", link: "/knowledge/network/rpc" },
+            { text: "gRPC", link: "/knowledge/network/grpc" },
+            { text: "Tars", link: "/knowledge/network/tars" },
+            { text: "DNS", link: "/knowledge/network/dns" },
+            { text: "跨域", link: "/knowledge/network/cors" },
+          ],
+        },
+        {
+          text: "前端安全",
+          collapsed: true,
+          link: "/knowledge/security/",
+          items: [
+            { text: "csrf", link: "/knowledge/security/csrf" },
+            { text: "xss", link: "/knowledge/security/xss" }
+          ],
+        },
+        {
+          text: "TypeScript",
+          collapsed: true,
+          link: "/knowledge/typescript/",
+          items: [],
+        },
+        {
+          text: "NodeJS",
+          collapsed: true,
+          link: "/knowledge/nodejs/",
+          items: [],
+        },
+        {
+          text: "Vue",
+          collapsed: true,
+          link: "/knowledge/vue/",
+          items: [],
+        },
+        {
+          text: "React",
+          collapsed: true,
+          link: "/knowledge/react/",
+          items: [],
+        },
+        {
+          text: "Angular",
+          collapsed: true,
+          link: "/knowledge/angular/",
+          items: [],
+        },
+        {
+          text: "RxJS",
+          collapsed: true,
+          link: "/knowledge/rxjs/",
+          items: [],
+        },
+        {
           text: "工作流",
           collapsed: true,
           items: [
