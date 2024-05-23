@@ -73,8 +73,6 @@ export default defineConfig({
             { text: "WebSocket", link: "/knowledge/network/websocket" },
             { text: "TCP/UDP", link: "/knowledge/network/tcp" },
             { text: "RPC", link: "/knowledge/network/rpc" },
-            { text: "gRPC", link: "/knowledge/network/grpc" },
-            { text: "Tars", link: "/knowledge/network/tars" },
             { text: "DNS", link: "/knowledge/network/dns" },
             { text: "跨域", link: "/knowledge/network/cors" },
           ],
@@ -182,6 +180,7 @@ export default defineConfig({
         src: "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.mjs",
       },
     ],
+    ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }]
   ],
   base: "/",
 });
