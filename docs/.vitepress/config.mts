@@ -13,7 +13,7 @@ export default defineConfig({
     },
     nav: [
       { text: "知识库", link: "/knowledge/javascript/newKnowledge" },
-      { text: "文集", link: "/article/" },
+      // { text: "文集", link: "/article/" },
       // { text: "小游戏", link: "/games/" },
       // { text: "工具集", link: "/tools/" },
     ],
@@ -40,7 +40,7 @@ export default defineConfig({
         },
         {
           text: "设计模式",
-          collapsed: true,
+          collapsed: false,
           items: [
             { text: "策略模式", link: "/knowledge/design-patterns/strategy" },
             { text: "单例模式", link: "/knowledge/design-patterns/singleton" },
@@ -56,7 +56,7 @@ export default defineConfig({
         },
         {
           text: "算法",
-          collapsed: true,
+          collapsed: false,
           items: algorithmSidebarConfig,
         },
         {

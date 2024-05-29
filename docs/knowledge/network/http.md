@@ -3,7 +3,11 @@
 
 ## 1. HTTP 协议简介
 
-HTTP（HyperText Transfer Protocol）是一种用于传输超文本（如 HTML）的应用层协议。它是一种请求-响应协议，客户端发送请求到服务器，服务器返回响应。
+HTTP（HyperText Transfer Protocol）是一种用于传输超文本（如 HTML）的应用层协议。它是一种请求-响应协议，客户端与服务端之间通过交换一个个独立的消息（而非数据流）进行通信。由客户端——通常是个浏览器——发出的消息被称作请求（request），由服务端发出的应答消息被称作响应（response）。
+
+![alt text](/public/img/common/http.png)
+
+20 世纪 90 年代，HTTP 作为一套可扩展的协议被设计出来，并随时间不断演进。HTTP 是一种应用层的协议，通过 TCP，或者是 TLS——一种加密过的 TCP 连接——来发送，当然，理论上来说可以借助任何可靠的传输协议。受益于 HTTP 的可扩展性，时至今日，它不仅可以用来获取超文本文档，还可用来获取图片、视频或者向服务端发送信息，比如填写好的 HTML 表单。HTTP 还可以用来获取文档的部分内容，以便按需更新 Web 页面。
 
 ## 2. HTTP 协议的前世今生
 
@@ -27,8 +31,26 @@ HTTP 3 是最新的版本，它使用 QUIC 协议替代了 TCP，以解决 HTTP 
 
 ## 3. HTTP 协议的缓存
 
-HTTP 缓存是一种重要的性能优化技术，它可以减少网络延迟和带宽使用。HTTP 缓存通过使用一些特定的 HTTP 头信息，如 `Cache-Control`、`ETag` 和 `Last-Modified`，来控制资源的缓存行为。
+HTTP 缓存是一种在客户端或代理服务器临时存储网页资源副本的技术,以减少对源服务器的请求次数,从而提高网页加载速度和降低网络流量。它主要分为两种类型:强制缓存和协商缓存。
+
+**强制缓存**
+
+强制缓存是利用响应头中的 Cache-Control 或 Expires 字段来控制的。如果满足缓存条件,浏览器直接从本地缓存中读取资源,不会与服务器发生任何交互。
+
+- Cache-Control: max-age=31536000 (单位为秒,这里设置为一年)
+
+- Expires: Wed, 21 Oct 2023 07:28:00 GMT (设置一个绝对的过期时间)
+
+**协商缓存**
+
+协商缓存需要客户端与服务器端进行通信,由服务器来确认缓存资源是否可以使用。如果可以使用,服务器返回 304 Not Modified 状态码,客户端直接从缓存读取资源。否则服务器返回 200 OK 状态码和最新资源内容。
+
+- Last-Modified / If-Modified-Since: 客户端通过请求头 If-Modified-Since 将缓存数据的最后修改时间发送给服务器,服务器通过响应头 Last-Modified 来确认资源是否已被更新。
+- ETag / If-None-Match: 服务器通过响应头 ETag 给出一个任意的资源标识符,客户端通过请求头 If-None-Match 将该标识符发送回服务器,服务器根据标识符判断资源是否已被修改。
+
+总的来说,强制缓存可以有效减少不必要的网络传输,而协商缓存则可以使缓存资源与服务器保持同步。合理利用这两种缓存策略可以显著提高网站性能。
 
 # 参考
 - [HTTP 的前世今生](https://coolshell.cn/articles/19840.html)
 - [图解 HTTP](/knowledge/book/图解HTTP+彩色版.html)
+- [MDN HTTP 指南](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Basics_of_HTTP)

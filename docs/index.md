@@ -10,8 +10,8 @@ hero:
     - theme: brand
       text: 知识库
       link: /knowledge/javascript/newKnowledge
-    - theme: alt
-      text: 文集
-      link: /article/
+    # - theme: alt
+    #   text: 文集
+    #   link: /article/
 ---
 
