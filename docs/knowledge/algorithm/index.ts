@@ -8,11 +8,11 @@ const titleMap = {
   string: "字符串",
   design: "设计",
   stack: "栈",
-  mathematics:'数学',
+  mathematics: "数学",
   "two-pointers": "双指针",
   "binary-tree": "二叉树",
   "linked-list": "链表",
-  "bitwise-operations":"位运算",
+  "bitwise-operations": "位运算",
   "binary-search": "二分查找",
   quickSort: "1.快速排序",
   insertSort: "2.插入排序",
@@ -28,6 +28,7 @@ const titleMap = {
 
 export const algorithmSidebarConfig = genSidebarConfig({
   basePath: resolve(__dirname),
-  baseLink: '/knowledge/algorithm',
+  baseLink: "/knowledge/algorithm",
   titleMap,
+  sortingArr: ["sorting"],
 });

@@ -69,7 +69,7 @@ export default defineConfig({
           collapsed: true,
           link: "/knowledge/network/",
           items: [
-            { text: "HTTP/HTTPS", link: "/knowledge/network/http" },
+            { text: "HTTP", link: "/knowledge/network/http" },
             { text: "WebSocket", link: "/knowledge/network/websocket" },
             { text: "TCP/UDP", link: "/knowledge/network/tcp" },
             { text: "RPC", link: "/knowledge/network/rpc" },

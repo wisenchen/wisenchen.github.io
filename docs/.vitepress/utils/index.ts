@@ -6,6 +6,7 @@ type Config = {
   titleMap: {
     [key: string]: string;
   };
+  sortingArr?: string[];
 };
 /**
  * 根据目录生成侧边栏配置
@@ -14,7 +15,7 @@ export function genSidebarConfig(conf: Config) {
   const { baseLink, basePath, titleMap } = conf;
   const dirList = readdirSync(basePath)
     .filter((name) => !name.includes(".ts"))
-    .sort((a, b) => parseInt(a) - parseInt(b));
+    .sort((a, b) => (conf.sortingArr?.includes(a) ? -1 : 0) || +conf.sortingArr?.includes(b) || parseInt(a) - parseInt(b));
   const res = dirList
     .filter((name) => name !== "index.md")
     .map((dirName) => {
